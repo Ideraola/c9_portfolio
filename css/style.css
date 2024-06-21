@@ -119,7 +119,7 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .header {
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(103, 89, 28, 0.1);
   padding: 10px 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -134,18 +134,14 @@ blockquote {
   position: relative;
   color: #fff;
 }
-.banner-image {
-  vertical-align: middle;
-  min-height: 100%;
-  width: 100%;
-}
+
 .banner:after {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.55);
+  background: radial-gradient(circle at 100%, #89316d, #1d5bea 50%, #eee 50%, #8e6084 75%);
   content: "";
 }
 .banner-caption {
@@ -161,8 +157,11 @@ blockquote {
   padding: 40px 0;
 }
 .section {
-  background-color: #ffffff;
+  background:linear-gradient(.25turn, rgba(155, 51, 51, 0.781), 40%, rgb(0, 64, 255));
   padding: 80px 0;
+}
+.c-design{
+  background:linear-gradient(to left,#da4ab6, rgb(13, 91, 199),rgb(135, 57, 57),rgb(38, 64, 69), transparent);
 }
 
 /* Backgrounds
@@ -238,9 +237,13 @@ blockquote {
 .bg-image-1 {
   background: url("../images/codebg.jpg") 50% 0px no-repeat;
 }
-.bg-image-2 {
-  background: url("../images/idera.jpg") 50% 0px no-repeat;
+.image{
+  background: url("../images/codebg.jpg") 50% 0px no-repeat;
 }
+.gradient{
+background:radial-gradient(ellipse, #484890, blue, transparent);
+}
+
 
 /* Misc
 ----------------------------------------------------------------------------- */
@@ -411,9 +414,11 @@ blockquote {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  color: #ffffff;
+  background: linear-gradient(.25turn, rgba(155, 51, 51, 0.781), 40%, rgb(0, 64, 255));
 }
 .form-control-feedback {
-  color: #cccccc;
+  color: white;
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 15px;
@@ -510,6 +515,33 @@ textarea {
     position: absolute;
   }
 }
+@media (max-width: 768px) {
+  p{
+    font-size: 10px;
+  }
+h1{
+  font-weight: 80;
+  margin-bottom: 5px;
+}
+h2{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+h3{
+  font-size: 12px;
+}
+h4{
+  font-size: 12px;
+  font-weight: 60;
+}
+h5{
+  font-size: 6px;
+  font-weight: 60;
+}
+h6{
+  font-weight: 60;
+}
+}
 
 /* Fixed Header
 ----------------------------------------------------------------------------- */
@@ -578,10 +610,10 @@ textarea {
 .social-links li {
   margin: 10px 25px 10px 0;
   display: inline-block;
-  font-size: 36px;
+  font-size: 20px;
 }
 .social-links li a {
-  color: #333333;
+  color: white;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -593,6 +625,9 @@ textarea {
 }
 .social-links li.facebook a:hover {
   color: #3b5998;
+}
+.social-links li.github a:hover {
+  color: #683b98;
 }
 
 /* Isotope Items
@@ -698,8 +733,31 @@ textarea {
 .social{
   border-radius: 50px;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 20px;
+  font-size: 10px;
+}
+.facebook {
+  background: blue;
+  color: white;
+}
+.github {
+  background: black;
+  color: white;
+}
+.linkedin{
+  background: rgb(35, 48, 125);
+  color: white;
 }
 .d-grid gap-2 d-md-block{
   border-radius:50px;
+}
+.col-md-6{
+  color: #f0f0f0;
+}
+#about{
+  color: #a1359a;
+  text-shadow: #983b98;
+  border-style: dashed;
+  border-radius: 40px;
+  border-width: 20px;
 }
