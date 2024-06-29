@@ -23,7 +23,7 @@ body {
   font-size: 15px;
   line-height: 1.5;
   color: #333333;
-  background-color: #ffffff;
+  background: gold;
   position: relative;
 }
 h1,
@@ -33,6 +33,10 @@ h4,
 h5,
 h6 {
   color: #333333;
+}
+p{
+  font-size: 20px;
+  font-weight: 200; 
 }
 h1 {
   font-size: 38px;
@@ -70,10 +74,10 @@ h4 span {
 }
 a {
   
-  color: rgb(0, 119, 255);
+  color: goldenrod
 }
 a:hover {
-  color: pink;
+  color: rgb(46, 42, 165);
 }
 a:focus,
 a:active {
@@ -119,7 +123,7 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .header {
   color: #ffffff;
-  background-color: rgba(103, 89, 28, 0.1);
+  background-color: rgb(195, 170, 31);
   padding: 10px 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -141,7 +145,8 @@ blockquote {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 100%, #89316d, #1d5bea 50%, #eee 50%, #8e6084 75%);
+  background: url("../images/portfolio-8.jpg")  no-repeat;
+  background-size: cover;
   content: "";
 }
 .banner-caption {
@@ -149,29 +154,30 @@ blockquote {
   top: 40%;
   width: 100%;
   z-index: 2;
+  
 }
 .subfooter {
-  background-color: #fafafa;
+  background-color:  goldenrod;
   border-top: 1px solid #f3f3f3;
   border-bottom: 1px solid #f3f3f3;
   padding: 40px 0;
 }
 .section {
-  background:linear-gradient(.25turn, rgba(155, 51, 51, 0.781), 40%, rgb(0, 64, 255));
+  background:gold;
   padding: 80px 0;
 }
 .c-design{
-  background:linear-gradient(to left,#da4ab6, rgb(13, 91, 199),rgb(135, 57, 57),rgb(38, 64, 69), transparent);
+  background:
 }
 
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
-  background-color: #222222;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: gold;
 }
 .default-bg.blue {
-  background-color: rgb(0, 119, 255);
+  background-color: black;
 }
 .translucent-bg {
   color: #ffffff;
@@ -237,11 +243,8 @@ blockquote {
 .bg-image-1 {
   background: url("../images/codebg.jpg") 50% 0px no-repeat;
 }
-.image{
-  background: url("../images/codebg.jpg") 50% 0px no-repeat;
-}
 .gradient{
-background:radial-gradient(ellipse, #484890, blue, transparent);
+background:radial-gradient(ellipse, goldenrod, rgb(42, 67, 165), transparent);
 }
 
 
@@ -322,8 +325,8 @@ background:radial-gradient(ellipse, #484890, blue, transparent);
 }
 .btn-default:hover {
   color: #ffffff;
-  background-color: pink;
-  border-color: pink;
+  background-color: black;
+  border-color: white;
 }
 
 /* Collapse
@@ -354,7 +357,7 @@ background:radial-gradient(ellipse, #484890, blue, transparent);
   padding: 12px 35px 12px 15px;
   display: inline-block;
   width: 100%;
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(42, 85, 165);
   color: #ffffff;
   position: relative;
   text-decoration: none;
@@ -413,18 +416,28 @@ background:radial-gradient(ellipse, #484890, blue, transparent);
   height: 45px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  border-radius: 0px;
-  color: #ffffff;
-  background: linear-gradient(.25turn, rgba(155, 51, 51, 0.781), 40%, rgb(0, 64, 255));
+  border-radius: none;
+  color: goldenrod;
+  background: linear-gradient(white, black);
 }
 .form-control-feedback {
   color: white;
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
-  top: 15px;
+  top: 15p;
 }
 textarea {
   resize: vertical;
+  text-align: center;
+}
+input{
+  text-align: center;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #cacaca;
+}
+label{
+  color: #f0f0f0;
 }
 
 /* Modals
@@ -517,11 +530,12 @@ textarea {
 }
 @media (max-width: 768px) {
   p{
-    font-size: 10px;
+    font-size: 18px;
+    font-weight: 150;
   }
 h1{
-  font-weight: 80;
-  margin-bottom: 5px;
+  font-weight: 30;
+  margin-bottom: 2px;
 }
 h2{
   font-size: 15px;
@@ -531,15 +545,15 @@ h3{
   font-size: 12px;
 }
 h4{
-  font-size: 12px;
-  font-weight: 60;
+  font-size: 14px;
+  font-weight: 20;
 }
 h5{
-  font-size: 6px;
-  font-weight: 60;
+  font-size: 14px;
+  font-weight: 20;
 }
 h6{
-  font-weight: 60;
+  font-weight: 20;
 }
 }
 
@@ -585,7 +599,7 @@ h6{
   transition: all 0.3s ease-in-out;
 }
 .site-name a {
-  color:rgb(43, 0, 128);
+  color:rgb(9, 0, 128);
 }
 .site-name a:hover {
   text-decoration: none;
@@ -627,7 +641,7 @@ h6{
   color: #3b5998;
 }
 .social-links li.github a:hover {
-  color: #683b98;
+  color: #3b6898;
 }
 
 /* Isotope Items
@@ -681,7 +695,7 @@ h6{
   bottom: -1px;
   left: 0;
   right: -1px;
-  background-color: rgb(56, 4, 4);
+  background-color:whitesmoke;
   cursor: pointer;
   overflow: hidden;
   opacity: 0;
@@ -737,11 +751,11 @@ h6{
   font-size: 10px;
 }
 .facebook {
-  background: blue;
+  background: rgb(35, 48, 125);
   color: white;
 }
 .github {
-  background: black;
+  background: rgb(35, 48, 125);
   color: white;
 }
 .linkedin{
@@ -755,9 +769,13 @@ h6{
   color: #f0f0f0;
 }
 #about{
-  color: #a1359a;
-  text-shadow: #983b98;
+  color: #162dd8;
+  text-shadow: #3b4a98;
   border-style: dashed;
   border-radius: 40px;
   border-width: 20px;
+}
+.hire{
+  border-radius: 50px;
+  width: 100px;
 }
