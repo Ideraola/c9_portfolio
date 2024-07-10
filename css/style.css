@@ -70,10 +70,10 @@ h4 span {
   color: #faffaf;
 }
 .text-colored {
-  color: #faffaf;
+  color: #050c9c;
+  outline: #3572ef;
 }
 a {
-  
   color: #050c9c
 }
 a:hover {
@@ -124,7 +124,7 @@ blockquote {
 .header {
   color: #ffffff;
   background-color: #050c9c;
-  padding: 10px 0;
+  padding: 5px 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -325,7 +325,7 @@ background:radial-gradient(ellipse, #050c9c, rgb(79, 83, 96), transparent);
 }
 .btn-default:hover {
   color: #ffffff;
-  background-color: black;
+  background-color: #050c9c;
   border-color: white;
 }
 
@@ -382,7 +382,7 @@ background:radial-gradient(ellipse, #050c9c, rgb(79, 83, 96), transparent);
 }
 .panel-heading a:hover {
   text-decoration: none;
-  background-color: black;
+  background-color: #050c9c;
   color: #ffffff;
 }
 .panel-title a i {
@@ -396,8 +396,8 @@ background:radial-gradient(ellipse, #050c9c, rgb(79, 83, 96), transparent);
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills > li > a:hover {
-  background-color: black;
-  border-color: black;
+  background-color: #3abef9;
+  border-color: #3abef9;
   color: #ffffff;
 }
 .nav-pills > li > a {
@@ -501,11 +501,11 @@ label{
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
   background-color: transparent;
-  color: ;
+  color:#3abef9 ;
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
-  color: ;
+  color: #3abef9;
 }
 @media (min-width: 768px) {
   .main-navigation .navbar-default .navbar-nav > li > a {
@@ -563,10 +563,10 @@ h6{
 
 /* Fixed Header
 ----------------------------------------------------------------------------- */
-.fixed-header-on .header {
-  background-color: rgba(0, 0, 0, 0.95);
+/*.fixed-header-on .header {
+  background-color: rgba(85, 80, 112, 0.95);
   padding: 5px 0;
-}
+}*/
 .fixed-header-on .site-name {
   font-size: 24px;
 }
@@ -576,7 +576,7 @@ h6{
   margin-top: 0;
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .fixed-header-on .navbar-default .navbar-nav > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -588,6 +588,11 @@ h6{
   .fixed-header-on .site-slogan {
     display: none;
   }
+}
+@media (max-width: 768px){
+.fixed-header-on .site-name {
+  font-size: 15px;
+}
 }
 
 /* Blocks/Widgets
@@ -603,11 +608,17 @@ h6{
   transition: all 0.3s ease-in-out;
 }
 .site-name a {
-  color:#a7e6ff;
-  text-decoration-color: #3572ef;
+  color:#050c9c
+  text-decoration-color: black;
+  background:#a7e6ff;
+  border-style:double;
+  border-radius: 10px;
+  border-bottom: #3572ef;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 .site-name a:hover {
-  text-decoration:none;
+  text-decoration:underline;
+  text-transform: lowercase;
 }
 .site-slogan {
   font-size: 12px;
@@ -632,7 +643,7 @@ h6{
   font-size: 20px;
 }
 .social-links li a {
-  color: white;
+  color: #050c9c;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -640,13 +651,13 @@ h6{
   transition: all 0.2s ease-in-out;
 }
 .social-links li.linkedin a:hover {
-  color: #0976b4;
+  color: #fff;
 }
 .social-links li.facebook a:hover {
-  color: #3b5998;
+  color: #fff;
 }
 .social-links li.github a:hover {
-  color: #3b6898;
+  color: #fff;
 }
 
 /* Isotope Items
@@ -686,6 +697,11 @@ h6{
     display: block;
   }
 }
+@media (max-width: 768px) {
+.site-name {
+  font-size: 25px;
+}
+}
 
 /* Images Overlay
 ----------------------------------------------------------------------------- */
@@ -700,7 +716,7 @@ h6{
   bottom: -1px;
   left: 0;
   right: -1px;
-  background-color:whitesmoke;
+  background-color:#050c9c;
   cursor: pointer;
   overflow: hidden;
   opacity: 0;
@@ -743,57 +759,91 @@ h6{
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-.col-md-10{
-  border-radius: 5%;
-  background-color: #3b5998;
-  height: 70%;
-  width: 25%;
-}
 .social{
   border-radius: 50px;
   align-items: center;
   padding-left: 20px;
   font-size: 10px;
 }
-.facebook {
-  background: black;
-  color: white;
-}
-.github {
-  background: black;
-  color: white;
-}
-.linkedin{
-  background: black;
-  color: white;
-}
-.d-grid gap-2 d-md-block{
-  border-radius:50px;
-}
-.col-md-6{
-  color: #f0f0f0;
-}
 #about{
   color: black;
-  text-shadow: #3b4a98;
-  border-style: dashed;
-  border-radius: 13px;
-  border-width: 5px;
+  text-align: center;
+  flex-basis: 50%;
+  margin-top: 50px;
 }
 .hire{
   border-radius: 50px;
   width: 100px;
+  cursor:pointer;
+  color:#050c9c;
 }
 #pbg{
-  background: url("../images/portfolio-2.jpg") 80% no-repeat;
+  background:radial-gradient( #050c9c, rgb(79, 83, 96), transparent);
   background-size: cover;
- 
 } 
 .footer-content{
   color: black;
 }
 @media (max-width: 767px){
   .header{
-    padding: 5px 0 
+    padding: 2px 0;
   }
 }
+#about-col-md-6{
+  background: radial-gradient(ellipse, #050c9c, rgb(79, 83, 96), transparent);
+  border-radius: 70px;
+  padding-top: 50px;
+  padding-bottom: 0;
+  padding-left:  0;
+  padding-right:  0;
+  margin-top: 80px;
+  margin-right:40px;
+  flex-basis: 35%;
+  }
+#about-col-md-6 img{
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  .main-navigation .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-nav {
+    float: left !important;
+  }
+}
+@media (max-width: 800px) {
+  .header.navbar-fixed-top {
+    position: absolute;
+  }
+}
+@media (max-width: 800px) {
+  p{
+    font-size: 18px;
+    font-weight: 150;
+  }
+h1{
+  font-weight: 30;
+  margin-bottom: 2px;
+}
+h2{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+h3{
+  font-size: 12px;
+}
+h4{
+  font-size: 14px;
+  font-weight: 20;
+}
+h5{
+  font-size: 14px;
+  font-weight: 20;
+}
+h6{
+  font-weight: 20;
+}
+}
+
+
